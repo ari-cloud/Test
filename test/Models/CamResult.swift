@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: - Result
-struct Result: Codable {
+struct CamResult: Codable {
     let success: Bool
     let data: DataClass
 }
