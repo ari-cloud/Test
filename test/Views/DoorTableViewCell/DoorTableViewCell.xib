@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -25,19 +24,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="218"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNE-iB-snY">
-                                <rect key="frame" x="17" y="235" width="42" height="20"/>
+                                <rect key="frame" x="17" y="238" width="42" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В сети" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psq-JX-O7X">
-                                <rect key="frame" x="17" y="255" width="43" height="17"/>
+                                <rect key="frame" x="17" y="257" width="43" height="17"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="6TZ-8D-kfx">
-                                <rect key="frame" x="267" y="241" width="25" height="24"/>
+                                <rect key="frame" x="250" y="238" width="25" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="eli-AN-ssQ"/>
                                     <constraint firstAttribute="width" constant="25" id="m9D-kR-3Ty"/>
@@ -54,11 +53,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="wDa-NX-sa8" secondAttribute="bottom" constant="72" id="2OB-tG-FoW"/>
-                            <constraint firstItem="pNE-iB-snY" firstAttribute="top" secondItem="wDa-NX-sa8" secondAttribute="bottom" constant="17" id="36T-UR-crN"/>
-                            <constraint firstAttribute="trailing" secondItem="6TZ-8D-kfx" secondAttribute="trailing" constant="8" id="5QS-x0-HSX"/>
+                            <constraint firstItem="pNE-iB-snY" firstAttribute="top" secondItem="wDa-NX-sa8" secondAttribute="bottom" constant="20" id="36T-UR-crN"/>
+                            <constraint firstAttribute="trailing" secondItem="6TZ-8D-kfx" secondAttribute="trailing" constant="25" id="5QS-x0-HSX"/>
                             <constraint firstAttribute="height" constant="290" id="A7A-zn-L0x"/>
-                            <constraint firstItem="psq-JX-O7X" firstAttribute="top" secondItem="wDa-NX-sa8" secondAttribute="bottom" constant="37" id="DNI-ng-nPN"/>
-                            <constraint firstItem="6TZ-8D-kfx" firstAttribute="top" secondItem="pNE-iB-snY" secondAttribute="top" constant="6" id="LZX-6b-vd4"/>
+                            <constraint firstItem="psq-JX-O7X" firstAttribute="top" secondItem="wDa-NX-sa8" secondAttribute="bottom" constant="39" id="DNI-ng-nPN"/>
+                            <constraint firstItem="6TZ-8D-kfx" firstAttribute="top" secondItem="pNE-iB-snY" secondAttribute="top" id="LZX-6b-vd4"/>
                             <constraint firstItem="wDa-NX-sa8" firstAttribute="leading" secondItem="kTV-tE-Ry1" secondAttribute="leading" id="QL8-36-cyw"/>
                             <constraint firstItem="psq-JX-O7X" firstAttribute="leading" secondItem="kTV-tE-Ry1" secondAttribute="leading" constant="17" id="X1I-yD-yor"/>
                             <constraint firstAttribute="trailing" secondItem="wDa-NX-sa8" secondAttribute="trailing" id="fIz-nO-pal"/>
@@ -69,7 +68,7 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="kTV-tE-Ry1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="5yQ-fm-AdI"/>
                     <constraint firstAttribute="trailing" secondItem="kTV-tE-Ry1" secondAttribute="trailing" constant="10" id="StW-d7-0iS"/>
@@ -81,6 +80,7 @@
             <connections>
                 <outlet property="cellImage" destination="wDa-NX-sa8" id="Pfn-lp-IBt"/>
                 <outlet property="favorites" destination="Obu-Ha-Kki" id="ebH-eP-si7"/>
+                <outlet property="height" destination="A7A-zn-L0x" id="4PS-Sx-SGz"/>
                 <outlet property="name" destination="pNE-iB-snY" id="ukL-yk-Rbe"/>
                 <outlet property="status" destination="psq-JX-O7X" id="ehF-3r-QdH"/>
                 <outlet property="view" destination="kTV-tE-Ry1" id="4Ss-au-cCL"/>
@@ -91,8 +91,5 @@
     <resources>
         <image name="lock" width="26" height="24"/>
         <image name="star" width="24" height="24"/>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

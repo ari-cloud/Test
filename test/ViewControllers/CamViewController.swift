@@ -10,7 +10,8 @@ class CamViewController: UIViewController {
     
     override func viewDidLoad() {
         cams = storage.getCams()
-        if ((cams?.isEmpty) != nil) {
+        guard let cams else { return }
+        if cams.isEmpty {
             network.getData(CamResult.self, url: "http://cars.cprogroup.ru/api/rubetek/cameras/") { result in
                 self.storage.saveCams(data: result)
             }
