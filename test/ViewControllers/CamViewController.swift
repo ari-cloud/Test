@@ -19,7 +19,8 @@ class CamViewController: UIViewController {
         tableView.register(CamTableViewCell.nib(), forCellReuseIdentifier: "camCell")
         cams = storage.getCams()
         network.getData(CamResult.self, url: "http://cars.cprogroup.ru/api/rubetek/cameras/") { result in
-            DispatchQueue.main.async {
+            DispatchQueue.main.async { [weak self] in
+                guard let self else { return }
                 self.storage.saveCams(data: result)
                 self.cams = self.storage.getCams()
                 self.camsFromNetwork = result
@@ -49,7 +50,7 @@ class CamViewController: UIViewController {
                     }
                     self.sections.append(section)
                 }
-                for cam in cams[0].cams {
+                for cam in camsFromNetwork.data.cameras {
                     if cam.room == "" {
                         let cam = Camera(name: cam.name,
                                          snapshot: cam.snapshot,
