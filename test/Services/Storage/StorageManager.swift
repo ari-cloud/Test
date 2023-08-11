@@ -11,7 +11,7 @@ class StorageManager {
     
     func saveCams(data: CamResult) {
         let cams = Cams()
-        cams.rooms = data.data.room
+        cams.rooms.append(objectsIn: data.data.room) 
         for item in data.data.cameras {
             let cam = Cam(value: [item.name,
                                   item.snapshot,
@@ -51,7 +51,7 @@ class StorageManager {
 }
 
 class Cams: Object {
-    dynamic var rooms: [String] = []
+    let rooms = List<String>()
     let cams = List<Cam>()
 }
 

@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 class NetworkManager {
     let sessionConfiguration = URLSessionConfiguration.default
@@ -18,5 +19,38 @@ class NetworkManager {
                 print("Error: \(String(describing: error?.localizedDescription))")
             }
         }.resume()
+    }
+    
+    func getImageForCam(with url: String, in cell: CamTableViewCell) {
+        guard let url = URL(string: url) else { return }
+        DispatchQueue.global().async {
+            if let data = try? Data(contentsOf: url) {
+                DispatchQueue.main.async {
+                    cell.cellImage.image = UIImage(data: data)
+                }
+            }
+        }
+    }
+    
+    func getImageForDoor(with url: String, in cell: DoorTableViewCell) {
+        guard let url = URL(string: url) else { return }
+        DispatchQueue.global().async {
+            if let data = try? Data(contentsOf: url) {
+                DispatchQueue.main.async {
+                    cell.cellImage.image = UIImage(data: data)
+                }
+            }
+        }
+    }
+    
+    func getImage(with url: String, for image: UIImageView) {
+        guard let url = URL(string: url) else { return }
+        DispatchQueue.global().async {
+            if let data = try? Data(contentsOf: url) {
+                DispatchQueue.main.async {
+                    image.image = UIImage(data: data)
+                }
+            }
+        }
     }
 }

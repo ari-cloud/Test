@@ -23,6 +23,10 @@
 		CA10FEF12A852F3A004DCCB1 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10FEF02A852F3A004DCCB1 /* StorageManager.swift */; };
 		CA10FEF52A8553ED004DCCB1 /* DoorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10FEF32A8553ED004DCCB1 /* DoorTableViewCell.swift */; };
 		CA10FEF62A8553ED004DCCB1 /* DoorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA10FEF42A8553ED004DCCB1 /* DoorTableViewCell.xib */; };
+		CA10FEFB2A862751004DCCB1 /* CamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10FEF92A862750004DCCB1 /* CamTableViewCell.swift */; };
+		CA10FEFC2A862751004DCCB1 /* CamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA10FEFA2A862750004DCCB1 /* CamTableViewCell.xib */; };
+		CA10FEFE2A867231004DCCB1 /* CamSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10FEFD2A867231004DCCB1 /* CamSection.swift */; };
+		CA10FF002A868FD1004DCCB1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10FEFF2A868FD1004DCCB1 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		CA10FEF02A852F3A004DCCB1 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		CA10FEF32A8553ED004DCCB1 /* DoorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorTableViewCell.swift; sourceTree = "<group>"; };
 		CA10FEF42A8553ED004DCCB1 /* DoorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoorTableViewCell.xib; sourceTree = "<group>"; };
+		CA10FEF92A862750004DCCB1 /* CamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamTableViewCell.swift; sourceTree = "<group>"; };
+		CA10FEFA2A862750004DCCB1 /* CamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CamTableViewCell.xib; sourceTree = "<group>"; };
+		CA10FEFD2A867231004DCCB1 /* CamSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamSection.swift; sourceTree = "<group>"; };
+		CA10FEFF2A868FD1004DCCB1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,7 @@
 			children = (
 				CA10FEE62A852735004DCCB1 /* CamResult.swift */,
 				CA10FEE82A852761004DCCB1 /* DoorResult.swift */,
+				CA10FEFD2A867231004DCCB1 /* CamSection.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -101,6 +110,7 @@
 		CA10FEC72A84F343004DCCB1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CA10FEF82A862733004DCCB1 /* CamTableViewCell */,
 				CA10FEF72A85541E004DCCB1 /* DoorTableViewCell */,
 				CA10FEB82A84F2D4004DCCB1 /* Main.storyboard */,
 			);
@@ -113,6 +123,7 @@
 				CA10FEB62A84F2D4004DCCB1 /* RootViewController.swift */,
 				CA10FEDE2A8513B6004DCCB1 /* CamViewController.swift */,
 				CA10FEE02A8513C5004DCCB1 /* DoorViewController.swift */,
+				CA10FEFF2A868FD1004DCCB1 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -157,6 +168,15 @@
 				CA10FEF42A8553ED004DCCB1 /* DoorTableViewCell.xib */,
 			);
 			path = DoorTableViewCell;
+			sourceTree = "<group>";
+		};
+		CA10FEF82A862733004DCCB1 /* CamTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CA10FEF92A862750004DCCB1 /* CamTableViewCell.swift */,
+				CA10FEFA2A862750004DCCB1 /* CamTableViewCell.xib */,
+			);
+			path = CamTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA10FEBF2A84F2D5004DCCB1 /* LaunchScreen.storyboard in Resources */,
+				CA10FEFC2A862751004DCCB1 /* CamTableViewCell.xib in Resources */,
 				CA10FEF62A8553ED004DCCB1 /* DoorTableViewCell.xib in Resources */,
 				CA10FEBC2A84F2D5004DCCB1 /* Assets.xcassets in Resources */,
 				CA10FEBA2A84F2D4004DCCB1 /* Main.storyboard in Resources */,
@@ -238,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA10FF002A868FD1004DCCB1 /* DetailViewController.swift in Sources */,
 				CA10FEE52A851BCD004DCCB1 /* NetworkManager.swift in Sources */,
 				CA10FEB72A84F2D4004DCCB1 /* RootViewController.swift in Sources */,
 				CA10FEB32A84F2D4004DCCB1 /* AppDelegate.swift in Sources */,
@@ -247,7 +269,9 @@
 				CA10FEE92A852761004DCCB1 /* DoorResult.swift in Sources */,
 				CA10FEE12A8513C5004DCCB1 /* DoorViewController.swift in Sources */,
 				CA10FEDF2A8513B6004DCCB1 /* CamViewController.swift in Sources */,
+				CA10FEFE2A867231004DCCB1 /* CamSection.swift in Sources */,
 				CA10FEB52A84F2D4004DCCB1 /* SceneDelegate.swift in Sources */,
+				CA10FEFB2A862751004DCCB1 /* CamTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
