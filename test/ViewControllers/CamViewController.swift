@@ -7,7 +7,6 @@ class CamViewController: UIViewController {
     
     var cams: Results<Cams>?
     var camsFromNetwork: CamResult?
-    var rows = 0
     var sections: [CamSection] = []
     
     private let network = NetworkManager()
@@ -24,7 +23,6 @@ class CamViewController: UIViewController {
                 self.storage.saveCams(data: result)
                 self.cams = self.storage.getCams()
                 self.camsFromNetwork = result
-                self.rows = result.data.cameras.count
                 self.getSections()
                 self.tableView.reloadData()
             }

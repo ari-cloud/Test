@@ -14,13 +14,7 @@ class DoorTableViewCell: UITableViewCell {
         view.layer.cornerRadius = 10
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-    }
-    
     static func nib() -> UINib {
         return UINib(nibName: "DoorTableViewCell", bundle: nil)
     }
-    
 }

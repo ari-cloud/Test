@@ -17,7 +17,8 @@ class DoorViewController: UIViewController {
         self.tableView.delegate = self
         tableView.register(DoorTableViewCell.nib(), forCellReuseIdentifier: "doorCell")
         doors = storage.getDoors()
-        network.getData(DoorResult.self, url: "http://cars.cprogroup.ru/api/rubetek/doors/") { result in
+        network.getData(DoorResult.self, url: "http://cars.cprogroup.ru/api/rubetek/doors/") { [weak self] result in
+            guard let self else { return }
             DispatchQueue.main.async {
                 self.storage.saveDoors(data: result)
                 self.doors = self.storage.getDoors()

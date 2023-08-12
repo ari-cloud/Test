@@ -28,8 +28,6 @@ class RootViewController: UIViewController {
         let titleColor = UIColor(red: CGFloat(0.2), green: CGFloat(0.2), blue: CGFloat(0.2), alpha: CGFloat(1.0))
         let textAttributes = [NSAttributedString.Key.foregroundColor: titleColor]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
-
     }
-
 }
 

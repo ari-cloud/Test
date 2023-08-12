@@ -148,17 +148,17 @@
 		CA10FEEF2A852F26004DCCB1 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				CA10FEF22A852F7F004DCCB1 /* New Group */,
-				CA10FEF02A852F3A004DCCB1 /* StorageManager.swift */,
+				CA10FEF22A852F7F004DCCB1 /* Storage */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
 		};
-		CA10FEF22A852F7F004DCCB1 /* New Group */ = {
+		CA10FEF22A852F7F004DCCB1 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				CA10FEF02A852F3A004DCCB1 /* StorageManager.swift */,
 			);
-			path = "New Group";
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		CA10FEF72A85541E004DCCB1 /* DoorTableViewCell */ = {

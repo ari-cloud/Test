@@ -15,5 +15,4 @@ class CamTableViewCell: UITableViewCell {
     static func nib() -> UINib {
         return UINib(nibName: "CamTableViewCell", bundle: nil)
     }
-    
 }
